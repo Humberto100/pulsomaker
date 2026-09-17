@@ -375,7 +375,7 @@
       <option value="tuxtla">📍 Tuxtla Gutiérrez</option>
       <option value="monterrey">📍 Monterrey</option>
     </select>
-    <a href="#contacto" class="nav-cta">Pedir por WhatsApp</a>
+    <a href="#" id="navCta" class="nav-cta" target="_blank" rel="noopener">Pedir por WhatsApp</a>
   </nav>
   <button class="menu-btn" aria-label="Menú">☰</button>
 </header>
@@ -539,6 +539,9 @@
 
     const waBtn = document.getElementById('footWaBtn');
     waBtn.href = `https://wa.me/${b.waNumber}?text=${encodeURIComponent('Hola Pulso Maker, quiero cotizar una pieza')}`;
+
+    const navCta = document.getElementById('navCta');
+    navCta.href = `https://wa.me/${b.waNumber}?text=${encodeURIComponent('Hola Pulso Maker, quiero cotizar una pieza')}`;
 
     const select = document.getElementById('branchSelect');
     if(select) select.value = key;
